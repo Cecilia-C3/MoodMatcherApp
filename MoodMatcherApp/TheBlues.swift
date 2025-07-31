@@ -18,15 +18,15 @@ struct TheBlues: View {
             VStack {
                 
                 Text("Welcome to:")
-                    .font(.title2)
-                    .foregroundColor(Color.white)
+                    .font(Font.custom("BRADLEY", size: 25))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                     .padding(0.5)
                 
                     //.navigationTitle
                 Text("The Blues")
+                    .font(Font.custom("BRADLEY", size: 40))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                 
-                    .font(.title)
-                    .foregroundColor(Color.white)
                 Text("☹️")
                     .font(.system(size: 70))
                 
