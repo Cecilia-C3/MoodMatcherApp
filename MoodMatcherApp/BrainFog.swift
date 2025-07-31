@@ -18,16 +18,17 @@ struct BrainFog: View {
             VStack {
                 
                 Text("Welcome to:")
-                    .font(.title2)
+                    .font(Font.custom("BRADLEY", size: 25))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                     .padding(0.5)
                 
                     //.navigationTitle
                 Text("Brain Fog")
-                
-                    .font(.title)
+                    .font(Font.custom("BRADLEY", size: 40))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
+               
                 Text("😵‍💫")
                     .font(.system(size: 70))
-                
                     .fontWeight(.bold)
                     .padding(30) // Adjust size of the circle
                     .background(Color(hue: 0.827, saturation: 0.254, brightness: 0.64)) // background color of circle
