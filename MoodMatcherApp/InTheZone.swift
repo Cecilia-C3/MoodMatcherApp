@@ -19,16 +19,17 @@ struct InTheZone: View {
             VStack {
                 
                 Text("Welcome to:")
-                    .font(.title2)
+                    .font(Font.custom("BRADLEY", size: 25))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                     .padding(0.5)
                 
                     //.navigationTitle
                 Text("In The Zone")
+                    .font(Font.custom("BRADLEY", size: 40))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                 
-                    .font(.title)
                 Text("😎")
                     .font(.system(size: 70))
-                
                     .fontWeight(.bold)
                     .padding(30) // Adjust size of the circle
                     .background(Color(hue: 0.248, saturation: 0.339, brightness: 0.896)) // background color of circle

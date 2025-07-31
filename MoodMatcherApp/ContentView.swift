@@ -14,9 +14,9 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("BYE MOOD")
+                Text("MOOD")
                  //   .font(.system(size: 45, weight: .bold, design: .rounded))
-                    .foregroundColor(Color(hue: 0.093, saturation: 0.921, brightness: 0.261))
+                    .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                     .padding(.horizontal, 10.0)
                     .shadow(radius: 15)
                     .font(Font.custom("Most Sky", size: 60))

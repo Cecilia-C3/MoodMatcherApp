@@ -18,18 +18,17 @@ struct Cloud9: View {
            VStack {
                
                Text("Welcome to:")
-                   .font(.title2)
-                   .foregroundColor(Color.white)
+                   .font(Font.custom("BRADLEY", size: 25))
+                   .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                    .padding(0.5)
                
                    //.navigationTitle
                Text("Cloud 9")
+                   .font(Font.custom("BRADLEY", size: 40))
+                   .foregroundColor(Color(red: 0.261, green: 0.155, blue: 0.021))
                
-                   .font(.title)
-                   .foregroundColor(Color.white)
                Text("😇")
                    .font(.system(size: 70))
-               
                    .fontWeight(.bold)
                    .padding(30) // Adjust size of the circle
                    .background(Color(hue: 0.051, saturation: 0.402, brightness: 0.917)) // background color of circle
