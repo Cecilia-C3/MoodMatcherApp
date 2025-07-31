@@ -24,9 +24,9 @@ struct ProductiveActivityListView: View {
     @State private var editProductiveActivity: ProductiveActivity?
     
     let setProductiveActivities = [
-        ProductiveActivity(productiveName: "x", productiveDescription: "y"),
-        ProductiveActivity(productiveName: "x", productiveDescription: "y"),
-        ProductiveActivity(productiveName: "x", productiveDescription: "y")
+        ProductiveActivity(productiveName: "Listen to a podcast", productiveDescription: "Find on Youtube, Spotify, or Apple 📱"),
+        ProductiveActivity(productiveName: "Exercise of your choice", productiveDescription: "Around your neighborhood, at a class, or at home 🧘"),
+        ProductiveActivity(productiveName: "Take adequate breaks", productiveDescription: "Hydrate and get snacks as needed 🥣")
     ]
     
     var body: some View {
@@ -70,6 +70,11 @@ struct ProductiveActivityListView: View {
                 .navigationBarItems(trailing: Button(action: {
                     addProductiveActivity = true
                 }) { Image(systemName: "plus")
+                        .font(.system(size: 18, weight: .bold))
+                        .padding(12)
+                        .background(Circle().fill(Color.white))
+                        .foregroundColor(Color(red: 0.6392, green: 0.7608, blue: 0.5137))
+                        .shadow(radius: 3)
                 })
                 .sheet(item: $editProductiveActivity) { activity in
                     EditProductiveActivityView(productiveActivity: activity)

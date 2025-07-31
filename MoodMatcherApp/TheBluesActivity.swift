@@ -24,9 +24,9 @@ struct SadActivityListView: View {
     @State private var editSadActivity: SadActivity?
     
     let setSadActivities = [
-        SadActivity(sadName: "x", sadDescription: "y"),
-        SadActivity(sadName: "x", sadDescription: "y"),
-        SadActivity(sadName: "x", sadDescription: "y")
+        SadActivity(sadName: "Let it all out", sadDescription: "Journal, draw, or paint your feelings——no filter 🎨"),
+        SadActivity(sadName: "Engage with old favorites", sadDescription: "Watch your comfort show or movie 🍿"),
+        SadActivity(sadName: "Rearrange your room", sadDescription: "Bring new & fresh energy into your life 💫")
     ]
     
     var body: some View {
@@ -70,6 +70,11 @@ struct SadActivityListView: View {
                 .navigationBarItems(trailing: Button(action: {
                     addSadActivity = true
                 }) { Image(systemName: "plus")
+                        .font(.system(size: 18, weight: .bold))
+                        .padding(12)
+                        .background(Circle().fill(Color.white))
+                        .foregroundColor(Color(hue: 0.626, saturation: 0.391, brightness: 0.785))
+                        .shadow(radius: 3)
                 })
                 .sheet(item: $editSadActivity) { activity in
                     EditSadActivityView(sadActivity: activity)

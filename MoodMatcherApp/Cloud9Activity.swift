@@ -70,6 +70,11 @@ struct HappyActivityListView: View {
                 .navigationBarItems(trailing: Button(action: {
                     addHappyActivity = true
                 }) { Image(systemName: "plus")
+                        .font(.system(size: 18, weight: .bold))
+                        .padding(12)
+                        .background(Circle().fill(Color.white))
+                        .foregroundColor(Color(red: 0.9176, green: 0.4706, blue: 0.3451))
+                        .shadow(radius: 3)
                 })
                 .sheet(item: $editHappyActivity) { activity in
                     EditHappyActivityView(happyActivity: activity)

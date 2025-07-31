@@ -70,6 +70,11 @@ struct BoredActivityListView: View {
                 .navigationBarItems(trailing: Button(action: {
                     addBoredActivity = true
                 }) { Image(systemName: "plus")
+                        .font(.system(size: 18, weight: .bold))
+                        .padding(12)
+                        .background(Circle().fill(Color.white))
+                        .foregroundColor(Color(red: 0.9294, green: 0.7451, blue: 0.8941))
+                        .shadow(radius: 3)
                 })
                 .sheet(item: $editBoredActivity) { activity in
                     EditBoredActivityView(boredActivity: activity)
